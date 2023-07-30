@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int factorial(int n) {
+unsigned long long int factorial(int n) {
     if (n == 0 || n == 1)
         return 1;
     else
@@ -8,10 +8,10 @@ int factorial(int n) {
 }
 
 int main() {
-    int num, result;
+    int num;
     printf("Enter a num: ");
     scanf("%d", &num);
-    result = factorial(num);
+    unsigned long long int result = factorial(num);
     printf("Factorial %d is %d", num, result);
 
     return 0;
