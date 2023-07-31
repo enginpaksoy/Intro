@@ -4,9 +4,9 @@ int isEven(int a);
 
 int main(){
     int num;
-    printf("Enter series of integers (enter 0 to stop): ");
 
     while (1){
+        printf("Enter series of integers (enter 0 to stop): ");
         scanf("%d", &num);
 
         if(num == 0){
