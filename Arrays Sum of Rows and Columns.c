@@ -16,10 +16,10 @@ int main() {
     printf("\nSum of columns: ");
     for(int j = 0; j < 5; j++){
         for(int i = 0; i < 5; i++){
-                sum_raw += arr[i][j];
+                sum_col += arr[i][j];
         }
-        printf("%d ", sum_raw);
-        sum_raw = 0;
+        printf("%d ", sum_col);
+        sum_col = 0;
     }
     return 0;
 }
