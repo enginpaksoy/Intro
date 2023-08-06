@@ -1,18 +1,20 @@
 #include <stdio.h>
 
-unsigned long long int factorial(int n) {
-    if (n == 0 || n == 1)
-        return 1;
-    else
-        return n * factorial(n - 1);
-}
+unsigned long long int factorial(int num);
 
 int main() {
-    int num;
-    printf("Enter a num: ");
-    scanf("%d", &num);
-    unsigned long long int result = factorial(num);
-    printf("Factorial %d is %d", num, result);
+    int n;
+    printf("%s", "Enter the number: ");
+    scanf("%d", &n);
+    printf("%llu", factorial(n));
+}
 
-    return 0;
+unsigned long long int factorial(int num){
+
+    if(num == 0 || num == 1){
+        return 1;
+    }
+    else{
+        return factorial(num - 1) * num;
+    }
 }
