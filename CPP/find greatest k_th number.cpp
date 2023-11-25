@@ -1,8 +1,13 @@
 #include <iostream>
 using namespace std;
 
+int k_th_number(int k_th);
 
 int main() {
+	printf("%d", k_th_number(3));
+}
+
+int k_th_number(int k_th) {
 	int n;
 	cin >> n;
 	int group_number[30];
@@ -22,7 +27,5 @@ int main() {
 			}
 		}
 	}
-	int k_th;
-	cin >> k_th;
-	cout << group_number[k_th-1];
+	return group_number[k_th - 1];
 }
